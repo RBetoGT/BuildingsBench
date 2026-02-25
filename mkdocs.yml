@@ -1,10 +1,10 @@
 site_name: BuildingsBench
 site_description: The documentation for the BuildingsBench platform.
 site_author: Patrick Emami
-site_url: https://nrel.github.io/BuildingsBench
+site_url: https://natlabrockies.github.io/BuildingsBench
 
-repo_name: NREL/BuildingsBench
-repo_url: https://github.com/NREL/BuildingsBench/
+repo_name: NLR/BuildingsBench
+repo_url: https://github.com/NLR/BuildingsBench/
 
 theme:
   name: material

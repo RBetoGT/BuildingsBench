@@ -4,18 +4,18 @@
 
 ![Dataset 3D rendering](./assets/buildings900k_viz.png)
 
-[[YouTube - General audience overview]](https://www.youtube.com/watch?v=-w40Qsoz_Mw) [[NeurIPS paper]](https://arxiv.org/abs/2307.00142) [[Docs]](https://nrel.github.io/BuildingsBench/)
+[[YouTube - General audience overview]](https://www.youtube.com/watch?v=-w40Qsoz_Mw) [[NeurIPS paper]](https://arxiv.org/abs/2307.00142) [[Docs]](https://natlabrockies.github.io/BuildingsBench/)
 
 ## Overview 
 
 BuildingsBench is a platform for enabling
-- Large-scale pretraining with energy timeseries using the synthetic Buildings-900K dataset, on a short-term load forecasting (STLF) task. Buildings-900K is statistically representative of the entire U.S. building stock and is extracted from the NREL [End-Use Load Profiles database](https://www.nrel.gov/buildings/end-use-load-profiles.html).
+- Large-scale pretraining with energy timeseries using the synthetic Buildings-900K dataset, on a short-term load forecasting (STLF) task. Buildings-900K is statistically representative of the entire U.S. building stock and is extracted from the NLR [End-Use Load Profiles database](https://www.nlr.gov/buildings/end-use-load-profiles.html).
 - Benchmarking such models on two tasks evaluating difficult generalization challenges: zero-shot STLF and transfer learning for STLF.
 
 We provide an index-based PyTorch Dataset for large-scale pretraining, easy data loading for multiple real building energy consumption datasets as PyTorch Tensors or Pandas DataFrames, simple (persistence) to advanced (transformer) baselines, metrics management, and more.
 
 
-Read more about BuildingsBench in our [NeurIPS'23 Datasets & Benchmarks paper](https://arxiv.org/abs/2307.00142) and [documentation](https://nrel.github.io/BuildingsBench/).
+Read more about BuildingsBench in our [NeurIPS'23 Datasets & Benchmarks paper](https://arxiv.org/abs/2307.00142) and [documentation](https://natlabrockies.github.io/BuildingsBench/).
 
 ## Installation
 
@@ -32,7 +32,7 @@ Otherwise, clone this repository and install it in editable mode in a virtual en
 1. Create an environment with `python>=3.9`, for example: `conda create -n buildings_bench python=3.9`.
 2. Install the package in editable mode with
 ```bash
-git clone https://github.com/NREL/BuildingsBench.git
+git clone https://github.com/NatLabRockies/BuildingsBench.git
 cd BuildingsBench
 pip install -e ".[benchmark]"
 ```
@@ -195,9 +195,9 @@ python3 scripts/transfer_learning_lightgbm.py
 
 ### Running the benchmark with your own models
 
-We provide scripts in the `./scripts` directory for pretraining and to run the benchmark tasks (zero-shot STLF and transfer learning), either with [our provided baselines](https://nrel.github.io/BuildingsBench/API/models/buildings_bench-models/) or your own model. To use these scripts with your model you'll need to register your model with our platform.
+We provide scripts in the `./scripts` directory for pretraining and to run the benchmark tasks (zero-shot STLF and transfer learning), either with [our provided baselines](https://natlabrockies.github.io/BuildingsBench/API/models/buildings_bench-models/) or your own model. To use these scripts with your model you'll need to register your model with our platform.
 
-See this [step-by-step tutorial](https://github.com/NREL/BuildingsBench/blob/main/tutorials/registering_your_model_with_the_benchmark.ipynb) for more details.
+See this [step-by-step tutorial](https://github.com/NatLabRockies/BuildingsBench/blob/main/tutorials/registering_your_model_with_the_benchmark.ipynb) for more details.
 
 Make sure to have installed the benchmark in editable mode: `pip install -e .[benchmark]`
 
@@ -253,7 +253,7 @@ Metrics:
   - Categorical Discrete Ranked Probability Score for token-based models
 
 PyTorch checkpoint files for all trained models can be downloaded in a single tar file [here](https://oedi-data-lake.s3.amazonaws.com/buildings-bench/v1.0.0/compressed/checkpoints.tar.gz).
-We provide a tutorial on how to use these pretrained models [here](https://github.com/NREL/BuildingsBench/blob/main/tutorials/pretrained_models.ipynb).
+We provide a tutorial on how to use these pretrained models [here](https://github.com/NatLabRockies/BuildingsBench/blob/main/tutorials/pretrained_models.ipynb).
 
 ### Zero-shot STLF
 

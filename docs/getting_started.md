@@ -76,7 +76,7 @@ BuildingsBench/
 
 - Version 2.0.0:
     - Added the building simulation metadata files, which contain attributes for the EnergyPlus building energy model used to run the simulation. See `Buildings-900K/end-use-load-profiles-for-us-building-stock/2021/resstock_amy2018_release_1/metadata/metadata.parquet` for an example.
-    - Added weather timeseries data. See this [description](https://nrel.github.io/BuildingsBench/running/#weather-timeseries) for more information.
+    - Added weather timeseries data. See this [description](https://natlabrockies.github.io/BuildingsBench/running/#weather-timeseries) for more information.
 
 
 ## Buildings-900K parquet file format
@@ -96,7 +96,7 @@ df = pq.read_table('puma={puma_id}', columns=['timestamp', bldg_id]).to_pandas()
 
 ## Exploring the data
 
-See our dataset quick start [Jupyter notebook](https://github.com/NREL/BuildingsBench/blob/main/tutorials/dataset_quick_start.ipynb)
+See our dataset quick start [Jupyter notebook](https://github.com/NatLabRockies/BuildingsBench/blob/main/tutorials/dataset_quick_start.ipynb)
 
 ## CSV file format
 

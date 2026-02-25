@@ -8,7 +8,7 @@ try:
     import faiss.contrib.torch_utils 
 except ImportError:
     print('Faiss is not installed. Follow instructions at '
-          'https://github.com/NREL/BuildingsBench/tree/v2.0.0?tab=readme-ov-file#installing-faiss-gpu to install faiss-gpu.')
+          'https://github.com/NatLabRockies/BuildingsBench/tree/v2.0.0?tab=readme-ov-file#installing-faiss-gpu to install faiss-gpu.')
     
 
 class LoadQuantizer:
