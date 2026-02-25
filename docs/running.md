@@ -25,7 +25,7 @@ To add your own custom model, you'll need to follow a few steps to register your
 
 ## Registering your model
 
-Please see this [step-by-step tutorial](https://github.com/NREL/BuildingsBench/blob/main/tutorials/registering_your_model_with_the_benchmark.ipynb) for a Jupyter Notebook version of the following instructions.
+Please see this [step-by-step tutorial](https://github.com/NatLabRockies/BuildingsBench/blob/main/tutorials/registering_your_model_with_the_benchmark.ipynb) for a Jupyter Notebook version of the following instructions.
 
 Make sure to have installed the benchmark in editable mode: `pip install -e .[benchmark]`
 

@@ -4,11 +4,11 @@
 
 BuildingsBench is a platform for enabling
 
-- Large-scale pretraining with energy timeseries using the synthetic Buildings-900K dataset, on a short-term load forecasting (STLF) task. Buildings-900K is statistically representative of the entire U.S. building stock and is extracted from the NREL [End-Use Load Profiles database](https://www.nrel.gov/buildings/end-use-load-profiles.html).
+- Large-scale pretraining with energy timeseries using the synthetic Buildings-900K dataset, on a short-term load forecasting (STLF) task. Buildings-900K is statistically representative of the entire U.S. building stock and is extracted from the NLR [End-Use Load Profiles database](https://www.nlr.gov/buildings/end-use-load-profiles.html).
 - Benchmarking such models on two tasks evaluating difficult generalization challenges: zero-shot STLF and transfer learning for STLF.
 
 
-We provide an index-based PyTorch [Dataset](https://nrel.github.io/BuildingsBench/API/data/buildings_bench-data/#the-buildings-900k-pytorch-dataset) for large-scale pretraining, easy data loading for multiple real building energy consumption datasets as [PyTorch Tensors](https://nrel.github.io/BuildingsBench/API/data/buildings_bench-data/#torchbuildingdatasetsfromcsv) or [Pandas DataFrames](https://nrel.github.io/BuildingsBench/API/data/buildings_bench-data/#pandasbuildingdatasetsfromcsv), from simple persistence to advanced transformer baselines, [metrics management](https://nrel.github.io/BuildingsBench/API/utilities/buildings_bench-evaluation/), a [tokenizer](https://nrel.github.io/BuildingsBench/API/utilities/buildings_bench-tokenizer/) based on KMeans for load time series, and more.
+We provide an index-based PyTorch [Dataset](https://natlabrockies.github.io/BuildingsBench/API/data/buildings_bench-data/#the-buildings-900k-pytorch-dataset) for large-scale pretraining, easy data loading for multiple real building energy consumption datasets as [PyTorch Tensors](https://natlabrockies.github.io/BuildingsBench/API/data/buildings_bench-data/#torchbuildingdatasetsfromcsv) or [Pandas DataFrames](https://natlabrockies.github.io/BuildingsBench/API/data/buildings_bench-data/#pandasbuildingdatasetsfromcsv), from simple persistence to advanced transformer baselines, [metrics management](https://natlabrockies.github.io/BuildingsBench/API/utilities/buildings_bench-evaluation/), a [tokenizer](https://natlabrockies.github.io/BuildingsBench/API/utilities/buildings_bench-tokenizer/) based on KMeans for load time series, and more.
 
 Read more about BuildingsBench in our [paper](https://arxiv.org/abs/2307.00142).
 
@@ -30,7 +30,7 @@ Otherwise, clone this repository and install it in editable mode in a virtual en
 1. Create an environment with `python>=3.9`, for example: `conda create -n buildings_bench python=3.9`.
 2. Install the package in editable mode with
 ```bash
-git clone https://github.com/NREL/BuildingsBench.git
+git clone https://github.com/NatLabRockies/BuildingsBench.git
 cd BuildingsBench
 pip install -e ".[benchmark]"
 ```
@@ -81,12 +81,12 @@ python3 -m unittest
 
 ## Next steps
 
-1. [Download and get familiar with the datasets](https://nrel.github.io/BuildingsBench/getting_started/)
-2. [Learn how to download a pretrained model and run it on a building dataset](https://github.com/NREL/BuildingsBench/blob/main/tutorials/pretrained_models.ipynb)
-3. [Learn how to run a custom model on the benchmark](https://github.com/NREL/BuildingsBench/blob/main/tutorials/registering_your_model_with_the_benchmark.ipynb)
-4. [Computing metrics and interpreting the results](https://github.com/NREL/BuildingsBench/blob/main/tutorials/aggregate_benchmark_results.ipynb)
+1. [Download and get familiar with the datasets](https://natlabrockies.github.io/BuildingsBench/getting_started/)
+2. [Learn how to download a pretrained model and run it on a building dataset](https://github.com/NatLabRockies/BuildingsBench/blob/main/tutorials/pretrained_models.ipynb)
+3. [Learn how to run a custom model on the benchmark](https://github.com/NatLabRockies/BuildingsBench/blob/main/tutorials/registering_your_model_with_the_benchmark.ipynb)
+4. [Computing metrics and interpreting the results](https://github.com/NatLabRockies/BuildingsBench/blob/main/tutorials/aggregate_benchmark_results.ipynb)
 
-[List of all tutorials](https://nrel.github.io/BuildingsBench/tutorials/).
+[List of all tutorials](https://natlabrockies.github.io/BuildingsBench/tutorials/).
 
 ## Citation
 
